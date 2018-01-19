@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master.master.cs" Inherits="master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Чат ЮГУ</title>
+        <link rel="stylesheet" href="Content/bootstrap.min.css" />
+        <%--<script type="text/javascript" src="Scripts/jquery-1.9.1.min.js"></script>--%>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="Scripts/myScript.js"></script>
+
+
+
+        <link rel="stylesheet" type="text/css" href="Content/emoji/css/jquery.emojipicker.css"/>
+        <script type="text/javascript" src="Content/emoji/js/jquery.emojipicker.js"></script>
+
+        <!-- Emoji Data -->
+        <link rel="stylesheet" type="text/css" href="Content/emoji/css/jquery.emojipicker.tw.css"/>
+        <script type="text/javascript" src="Content/emoji/js/jquery.emojis.js"></script>
+
+         <link rel="stylesheet" type="text/css" href="Content/font-awesome.min.css"/>
+
+        <%-- Ссылки н акастомный скролл бар --%>
+<%--        <script type="text/javascript" src="Scripts/jquery.custom-scrollbar.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="Content/jquery.custom-scrollbar.css" />--%>
+    </head>
+    
+    <body>
+        <form runat="server">
+            <asp:ContentPlaceHolder runat="server" ID="cph_header"></asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder runat="server" ID="cph_body"></asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder runat="server" ID="cph_footer"></asp:ContentPlaceHolder>
+        </form>
+    </body>
+
+</html>
